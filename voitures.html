@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/burger-menu.css" />
+    <title>PTS</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <section class="content">
+      <header>
+        <h1>PEUGEOT TALBOT SPORT</h1>
+        <nav>
+          <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a href="accueil.html">ACCUEIL</a>
+            </li>
+            <li>
+              <a href="pilotes.html">PILOTES</a>
+            </li>
+            <li>
+              <a href="voitures.html">VOITURES</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+          Toggle Dark Mode
+        </div>
+        <button class="do-nothing-button">Do Nothing</button>
+      </header>
+      <main>
+       
+        <div class="car" id="carDetails">
+          <a>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Peugeot_Talbot_Sport_205_T16_%2828504430670%29.jpg/1280px-Peugeot_Talbot_Sport_205_T16_%2828504430670%29.jpg"
+              alt="Nom de la voiture"
+            />
+          </a>
+          <h2>PEUGEOT 205 T16 EVO2</h2>
+          <p>
+            La Peugeot 205 Turbo 16, aussi appelée 205 T16, est une voiture de
+            sport, du constructeur automobile Peugeot, basée sur la carrosserie
+            de la Peugeot 205. Avec sa version compétition, Peugeot remporte les
+            titres mondiaux pilotes et constructeurs en championnat du monde des
+            rallyes en 1985 et 19861, ainsi qu'en moins de trois saisons pleines
+            au moins une fois toutes les épreuves proposées hormis les deux
+            africaines et celle américaine (alors l'Olympus).
+          </p>
+          <button onclick="toggleDescription()">Toggle Description</button>
+        </div>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
